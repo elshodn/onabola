@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ona va Bola</title>
+  <meta name="title" content="Ona va bola klinika">
+  <meta name="description" content="Klinika ona bola davolash doktor">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <!-- <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home"> -->
+        Logo
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home"> -->
+
+            Logo
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Asosiy</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Doctorlar</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Xizmatlar</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Yangiliklar</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Aloqa</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="#" class="btn has-before title-md">Uchrashuv belilash</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('https://onavabola.vercel.app/assets/images/hero-bg.png')" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before" data-reveal="left">Assalomu aleykum, Xushkelibsiz</p>
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              Sog‘lom ona — baxtli bola!
+            </h1>
+
+            <div class="hero-card" data-reveal="left">
+
+              <p class="title-lg">
+                Har bir tabassum ortida sog‘lom kelajak bor.
+              </p>
+
+
+
+            </div>
+
+          </div>
+
+          <figure class="hero-banner" data-reveal="right">
+            <img src="./assets/images/onabola.jpg" style="border-radius:20px ;" width="590" height="517" loading="eager" alt="hero banner"
+              class="w-100">
+          </figure>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-label="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Psixolog </a>
+                </h3>
+
+                <p class="card-text">
+                  Stress, depressiya, tug‘ruqdan keyingi holatlar, onalikni psixologik qabul qilishga yordam. <span
+                    style="color: white;">psixologik qabul qilishga yordam.</span>
+                </p>
+
+                <button class="btn-circle" aria-label="read more about psychiatry">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Ginekolog</a>
+                </h3>
+
+                <p class="card-text">
+                  Homiladorlik monitoringi, UZI, tug‘ruqni boshqarish, ayollar salomatligi muammolari. <span
+                    style="color: white;">boshqarish, ayollar salomatligi </span>
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Gynecology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Pediatr </a>
+                </h3>
+
+                <p class="card-text">
+                  Emizikli chaqaloq parvarishi, kasalliklar diagnostikasi va davolash, emlashlar, sog‘lom rivojlanish
+                  monitoringi.
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Pulmonology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Neonatolog</a>
+                </h3>
+
+                <p class="card-text">
+                  Neonatal intensiv terapiya, tug‘ruqdan keyingi parvarish, yangi tug‘ilgan chaqaloq muammolari bilan
+                  ishlash.
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Orthopedics">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-labelledby="about-label">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">Biz haqimizda</p>
+
+            <h2 class="headline-md" data-reveal="left">Tajribali ishchilar</h2>
+
+            <p class="section-text" data-reveal="left">
+              Tajribamiz – ishonchingiz garovi.
+              Klinikamizda faoliyat yuritayotgan har bir shifokor o‘z sohasining yetuk mutaxassisi. Yillar davomida
+              to‘plangan tajriba, zamonaviy tibbiyot uslublari va bemorga individual yondashuv bizning asosiy
+              ustunligimizdir. Biz sog‘lom kelajak sari har bir qadamingizda hamroh bo‘lamiz.
+            </p>
+
+            <ul class="tab-list" data-reveal="left">
+
+              <li>
+                <button class="tab-btn active">Maqsadimiz</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Burchimiz</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Yo'limiz</button>
+              </li>
+
+            </ul>
+
+            <p class="tab-text" data-reveal="left">
+              Bizning asosiy maqsadimiz — ona va bola salomatligini har tomonlama qo‘llab-quvvatlash orqali sog‘lom kelajak barpo etish.
+            </p>
+
+            <div class="wrapper">
+
+              <ul class="about-list">
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Sog‘lom avlod uchun — bugun harakat qilamiz.</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Tibbiyotda yetakchi bo‘lish – bizning yo‘limiz.</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Har bir bemor — alohida yondashuvga loyiq.</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Ishonchli klinika — sog‘lom jamiyat poydevori.</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="./assets/images/person1.jpg" width="250" alt="" />
+                <p>Axmetov Jamol</p>
+                <p>Лоp</p>
+              </div>
+              <div class="slide">
+                <img src="./assets/images/person2.jpg" height="100%" width="250" alt="" />
+                <p>Axmetov Jamol</p>
+                <p>Неврапотолoг</p>
+              </div> 
+              <div class="slide">
+                <img src="./assets/images/person3.jpg" height="100%" width="250" alt="" />
+              <p>Xojaniyazov G'ayrat </p>
+                <p>Педиатр реаниматолoг</p>
+            </div>
+              <div class="slide">
+                <img src="./assets/images/person4.jpg" height="100%" width="250" alt="" />
+             <p>Мафтуна Бахтёровна</p>
+             <p>Neyropsixolog</p>
+              </div>
+              <div class="slide">
+                <img src="./assets/images/person1.jpg" width="250" alt="" />
+                <p>Axmetov Jamol</p>
+                <p>Лоp</p>
+              </div>
+              <div class="slide">
+                <img src="./assets/images/person2.jpg" height="100%" width="250" alt="" />
+                <p>Axmetov Jamol</p>
+                <p>Неврапотолoг</p>
+              </div> 
+              <div class="slide">
+                <img src="./assets/images/person3.jpg" height="100%" width="250" alt="" />
+              <p>Xojaniyazov G'ayrat </p>
+                <p>Педиатр реаниматолoг</p>
+            </div>
+              <div class="slide">
+                <img src="./assets/images/person4.jpg" height="100%" width="250" alt="" />
+             <p>Мафтуна Бахтёровна</p>
+             <p>Neyropsixolog</p>
+              </div>
+      
+
+            </div>
+          </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #LISTING
+      -->
+
+      <section class="section listing" aria-labelledby="listing-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctolarimiz</p>
+
+              <h2 class="headline-md" data-reveal="left">Doktorlarni qidiring</h2>
+            </li>
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Ginekolog</h3>
+
+                  <p class="card-text">Mattis augue</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Neonatolog</h3>
+
+                  <p class="card-text">Mauris laoreet</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Psixolog </h3>
+
+                  <p class="card-text">Convallis vulputate</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Pediatr</h3>
+
+                  <p class="card-text">Posuere maecenas</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Endokrinolog</h3>
+
+                  <p class="card-text">Nisi nullam</p>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="https://onavabola.vercel.app/assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title"> Emizish  </h3>
+
+                  <p class="card-text">Porta velit</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+
+          <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
+            Shifoxonamiz haqida
+          </p>
+
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Mutaxasislardan sifatli muolaja oling</h2>
+
+        </div>
+        <video src="./assets/images/Ona-bola.mp4" autoplay height="500px" style="margin-inline: auto; display: block; border-radius: 10px;" controls muted loop></video>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('https://onavabola.vercel.app/assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="section footer-top">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo.svg" width="136" height="46" loading="lazy" alt="Doclab home"> -->
+             logo
+          </a>
+
+          <ul class="contact-list has-after">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="mail-open-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Email : <a href="mailto:contact@website.com" class="contact-link">contact@&shy;website.com</a>
+                </p>
+
+                <p>
+                  Savollar uchun : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Ofis Telefoni : <a href="tel:0029129102320" class="contact-link">+998 99 999 99 99</a>
+                </p>
+
+                <p>
+                  Uyali aloqa : <a href="tel:000232439493" class="contact-link">+998 99 990 99 99</a>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Biz haqimizda</p>
+
+          <p class="text">
+            Yuragingizdagi eng nozik muhabbatga – professional g‘amxo‘rlik.
+          </p>
+
+          <address class="address">
+            <ion-icon name="map-outline"></ion-icon>
+
+            <span class="text">
+              Toshkent shahar, Olmazor tumani, 1-uy, 2-qavat, 3-xonadon
+            </span>
+          </address>
+
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Xizmatlar</p>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Doktorlar</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Bu qanday ishylaydi</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Nimani taklif beramiz</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">So'ngi yangilikar</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Biz bilan bog'laning</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Foydali havolalar</p>
+          </li>
+          <li>
+            <a href="#" class="text footer-link">Foydalanish qoidalari</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Bizning xizmatlar</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Safimizga qo'shiling </a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Jamoa ro'yhati</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Obuna</p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email" placeholder="Email" class="input-field title-lg">
+
+            <button type="submit" class="btn has-before title-md">Obuna</button>
+          </form>
+
+          <p class="text">
+            Email orqali so'ngi yangililarni oling, Xoxlagan paytingiz obunani bekor qilishingiz mumkin.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; Endikrinolog_uz 2023. Barcha huquqlar himoyalangan.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
