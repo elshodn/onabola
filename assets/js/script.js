@@ -108,3 +108,32 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev"
   }
 });
+document.getElementById('tgForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = this.fio.value;
+  const date = this.date.value;
+  const phone = this.tel.value;
+
+  const token = 'YOUR_BOT_TOKEN';
+  const chatId = 'YOUR_GROUP_CHAT_ID';
+
+  const message = `📥 Yangi bron:\n👤 Ism: ${name}\n📅 Sana: ${date}\n📞 Tel: ${phone}`;
+
+  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: message
+    })
+  }).then(res => {
+    if (res.ok) {
+      alert("Xabar yuborildi!");
+    } else {
+      alert("Xatolik yuz berdi.");
+    }
+  });
+});
