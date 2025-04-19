@@ -91,4 +91,4 @@ function changeLanguage(lang) {
     el.textContent = el.getAttribute(`data-type-${lang}`);
   });
 }
-changeLanguage('uz');
+changeLanguage('ru');
