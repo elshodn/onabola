@@ -17,50 +17,20 @@
   <meta name="twitter:title" content="Ona va bola klinika">
   <meta name="twitter:description" content="Sog'lom ona va bola">
   <meta name="twitter:image" content="./assets/images/logo.png">
-
-  <!-- 
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
-
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
     rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
 
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #PRELOADER
-  -->
-
   <div class="preloader" data-preloader>
     <div class="circle"></div>
   </div>
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
 
   <header class="header" data-header>
     <div class="container">
@@ -87,23 +57,26 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Asosiy</a>
+            <a  data-type-uz="Asosiy" data-type-ru="Главная" data-lang href="#" class="navbar-link title-md"></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Doctorlar</a>
+            <a data-type-uz="Doctorlar" data-type-ru="Докторы" data-lang  href="#" class="navbar-link title-md"></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Xizmatlar</a>
+            <a data-type-uz="Xizmatlar" data-type-ru="Услуги" data-lang href="#" class="navbar-link title-md"></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Yangiliklar</a>
+            <a data-type-uz="Batafsil" data-type-ru="Подробне" data-lang href="#" class="navbar-link title-md"></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Aloqa</a>
+            <a data-type-uz="Aloqa" data-type-ru="Контакт" data-lang href="#" class="navbar-link title-md"></a>
+          </li>
+          <li class="navbar-item d-flex text-white align-items-center navbar-link title-md">
+            <p class="cp" onclick="changeLanguage('uz')">Uz</p> <div class="linec"></div> <p class="cp" onclick="changeLanguage('ru')">Ru</p>
           </li>
 
         </ul>
@@ -111,32 +84,18 @@
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-pinterest"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/ona_bola_clinic/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.youtube.com/@ona_va_bola_clinic" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li> 
+          <li>
+            <a href="https://t.me/ona_bola_klinic" class="social-link">
+              <ion-icon name="telegram"></ion-icon>
             </a>
           </li>
 
@@ -148,7 +107,7 @@
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-      <a href="#footer" class="btn has-before title-md">Uchrashuv belilash</a>
+      <a href="#footer" data-type-uz="Uchrashuv belilash" data-type-ru="Отметить встречу" data-lang class="btn has-before title-md"></a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -162,26 +121,22 @@
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
       <section class="section hero"
          aria-label="home">
         <div class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle has-before" data-reveal="left">Assalomu aleykum, Xushkelibsiz</p>
+            <p class="hero-subtitle has-before"data-type-uz="Assalomu aleykum, Xushkelibsiz" data-lang data-type-ru="Здраствуйте Добро пожаловать в" data-reveal="left"></p>
 
-            <h1 class="headline-lg hero-title" data-reveal="left">
-              Sog‘lom ona va bola!
+            <h1 class="headline-lg hero-title" data-type-uz=" Sog‘lom ona va bola!"data-lang data-type-ru=" Здоровая мать и ребенок" data-reveal="left">
+             
             </h1>
 
             <div class="hero-card" data-reveal="left">
 
-              <p class="title-lg">
-                Har bir tabassum ortida sog‘lom kelajak bor.
+              <p class="title-lg" data-type-uz="Har bir tabassum ortida sog‘lom kelajak bor."data-lang data-type-ru="За каждой улыбкой стоит здоровое будущее.">
+                
               </p>
 
 
@@ -197,14 +152,6 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
       <section class="service" aria-label="service">
         <div class="container">
 
@@ -218,12 +165,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Lor </a>
+                  <a  data-type-uz="Lor" data-type-ru="Лор" data-lang href="#"></a>
                 </h3>
 
-                <p class="card-text">
-                  Quloq, burun va tomoq kasalliklarini davolovchi mutaxassis. <span
-                    style="color: white;">psixologik qabul qilishga yordam.</span>
+                <p class="card-text" data-type-uz=" Quloq, burun va tomoq kasalliklarini davolovchi mutaxassis." data-type-ru="Специалист, лечащий заболевания уха, горла и носа. " data-lang>
+                 </span>
                 </p>
 
                 <button class="btn-circle" aria-label="read more about psychiatry">
@@ -242,11 +188,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Nevropotolog</a>
+                  <a data-type-uz="Nevropotolog" data-type-ru="Невропотолог" href="#" data-lang></a>
                 </h3>
 
-                <p class="card-text">
-                   Asab tizimi bilan bog‘liq kasalliklarni aniqlaydi va davolaydi. Bunga bosh og‘rig‘i, bosh aylanishi, uyqusizlik, falaj, </span>
+                <p class="card-text" data-type-uz="Asab tizimi bilan bog‘liq kasalliklarni aniqlaydi va davolaydi. Bunga bosh og‘rig‘i, bosh aylanishi, uyqusizlik, falaj," data-type-ru="Диагностирует и лечит заболевания нервной системы. Это включает в себя головные боли, головокружение, бессонницу, паралич," data-lang>
+                    </span>
                 </p>
 
                 <button class="btn-circle" aria-label="read more about Gynecology">
@@ -265,11 +211,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Pediatr </a>
+                  <a href="#" data-type-uz="Pediatr" data-type-ru="Педиатр" data-lang> </a>
                 </h3>
 
-                <p class="card-text">
-                  Bolalar shifokori bo‘lib, yangi tug‘ilgan chaqaloqlardan va, o‘smir yoshdagi bolalargacha salomatligi bilan shug‘ullanadi.
+                <p class="card-text" data-type-uz="Bolalar shifokori bo‘lib, yangi tug‘ilgan chaqaloqlardan va, o‘smir yoshdagi bolalargacha salomatligi bilan shug‘ullanadi." data-type-ru="Педиатр занимается здоровьем детей от новорожденных до подростков." data-lang>
+                  
                 </p>
 
                 <button class="btn-circle" aria-label="read more about Pulmonology">
@@ -288,11 +234,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Neyropsixolog</a>
+                  <a href="#" data-type-uz="Neyropsixolog" data-type-ru="Нейропсихолог" data-lang></a>
                 </h3>
 
-                <p class="card-text">
-                  Neyropsixolog insonning miya faoliyati bilan bog‘liq psixologik jarayonlarini o‘rganadi. <span style="color: white;">asdasdasdas</span>
+                <p class="card-text" data-type-uz="Neyropsixolog insonning miya faoliyati bilan bog‘liq psixologik jarayonlarini o‘rganadi." data-type-ru="Нейропсихолог изучает психологические процессы, связанные с деятельностью человеческого мозга." data-lang>
+                   <span style="color: white;">asdasdasdas</span>
                 </p>
 
                 <button class="btn-circle" aria-label="read more about Orthopedics">
@@ -307,49 +253,46 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
       <section class="section about" aria-labelledby="about-label">
         <div class="container">
 
           <div class="about-content">
 
-            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">Biz haqimizda</p>
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left" data-lang data-type-uz="Biz haqimizda" data-type-ru="О нас"></p>
 
-            <h2 class="headline-md" data-reveal="left">Tajribali ishchilar</h2>
+            <h2 class="headline-md" data-reveal="left" data-type-uz="Tajribali ishchilar" data-type-ru="Опытные работники" data-lang></h2>
 
-            <p class="section-text" data-reveal="left">
-              Tajribamiz – ishonchingiz garovi.
-              Klinikamizda faoliyat yuritayotgan har bir shifokor o‘z sohasining yetuk mutaxassisi. Yillar davomida
-              to‘plangan tajriba, zamonaviy tibbiyot uslublari va bemorga individual yondashuv bizning asosiy
-              ustunligimizdir. Biz sog‘lom kelajak sari har bir qadamingizda hamroh bo‘lamiz.
+            <p class="section-text" data-reveal="left" data-type-uz=" Tajribamiz – ishonchingiz garovi.
+            Klinikamizda faoliyat yuritayotgan har bir shifokor o‘z sohasining yetuk mutaxassisi. Yillar davomida
+            to‘plangan tajriba, zamonaviy tibbiyot uslublari va bemorga individual yondashuv bizning asosiy
+            ustunligimizdir. Biz sog‘lom kelajak sari har bir qadamingizda hamroh bo‘lamiz."
+             data-type-ru="Наш опыт — гарантия вашего доверия.
+             Каждый врач, работающий в нашей клинике, является опытным специалистом в своей области. На протяжении многих лет
+             Накопленный опыт, современные медицинские методы и индивидуальный подход к пациенту — наши главные принципы.
+             это наше преимущество. Мы будем сопровождать вас на каждом этапе пути к здоровому будущему." data-lang>
+             
             </p>
 
             <ul class="tab-list" data-reveal="left">
 
               <li>
-                <button class="tab-btn active">Maqsadimiz</button>
+                <button class="tab-btn active" data-type-uz="Maqsadimiz" data-type-ru="Наша цель" data-lang></button>
               </li>
 
               <li>
-                <button class="tab-btn">Burchimiz</button>
+                <button class="tab-btn" data-type-uz="Burchimiz" data-type-ru="Наш долг" data-lang></button>
               </li>
 
               <li>
-                <button class="tab-btn">Yo'limiz</button>
+                <button class="tab-btn" data-type-uz="Yo'limiz" data-type-ru="Наш путь" data-lang></button>
               </li>
 
             </ul>
 
-            <p class="tab-text" data-reveal="left">
-              Bizning asosiy maqsadimiz — ona va bola salomatligini har tomonlama qo‘llab-quvvatlash orqali sog‘lom
-              kelajak barpo etish.
+            <p class="tab-text" data-reveal="left" data-type-uz="Bizning asosiy maqsadimiz — ona va bola salomatligini har tomonlama qo‘llab-quvvatlash orqali sog‘lom
+            kelajak barpo etish." data-type-ru="Наша главная цель — содействие здоровому образу жизни посредством комплексной поддержки здоровья матери и ребенка.
+            Строим будущее." data-lang>
+              
             </p>
 
             <div class="wrapper">
@@ -359,25 +302,25 @@
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Sog‘lom avlod uchun — bugun harakat qilamiz.</span>
+                  <span class="span" data-type-uz="Sog‘lom avlod uchun — bugun harakat qilamiz." data-type-ru="Ради здорового поколения – мы действуем сегодня." data-lang></span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Tibbiyotda yetakchi bo‘lish – bizning yo‘limiz.</span>
+                  <span class="span" data-type-uz="Tibbiyotda yetakchi bo‘lish – bizning yo‘limiz." data-type-ru="Наш путь — стать лидером в медицине." data-lang></span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Har bir bemor — alohida yondashuvga loyiq.</span>
+                  <span class="span" data-type-uz="Har bir bemor — alohida yondashuvga loyiq." data-type-ru="Каждый пациент заслуживает индивидуального подхода." data-lang></span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Ishonchli klinika — sog‘lom jamiyat poydevori.</span>
+                  <span class="span" data-type-uz="Ishonchli klinika — sog‘lom jamiyat poydevori." data-type-ru="Надежная клиника — основа здорового общества." data-lang></span>
                 </li>
 
               </ul>
@@ -389,57 +332,49 @@
             <div class="slide-track">
               <div class="slide">
                 <img src="./assets/images/person1.jpg" width="250" alt="" />
-                <p class="text-bold text-22">Axmetov Jamol</p>
-                <p>Лоp</p>
+                <p class="text-bold text-22" data-type-uz="Axmetov Jamol" data-type-ru="Axmetov Jamol" data-lang></p>
+                <p data-type-uz="Lor" data-type-ru="Лоp" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person2.jpg" height="100%" width="250" alt="" />
-                <p class="text-bold text-22">Axmetov Jamol</p>
-                <p>Неврапотолoг</p>
+                <p class="text-bold text-22" data-type-uz="Axmetov Jamol" data-type-ru="Ахметов Джамал" data-lang></p>
+                <p data-type-uz="Nevropotolog" data-type-ru="Неврапотолoг" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person3.jpg" height="100%" width="250" alt="" />
-                <p class="text-bold text-22">Xojaniyazov G'ayrat </p>
-                <p>Педиатр реаниматолoг</p>
+                <p class="text-bold text-22" data-type-uz="Xojaniyazov G'ayrat" data-type-ru="Ходжаниязов Гайрат" data-lang> </p>
+                <p data-type-uz="Pediatr reanimotolog" data-type-ru="Педиатр реаниматолoг" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person4.jpg" height="100%" width="250" alt="" />
-                <p class="text-bold text-22">Мафтуна Бахтёровна</p>
-                <p>Neyropsixolog</p>
+                <p data-type-uz="Maftuna Baxtiyorovna" data-type-ru="Мафтуна Бахтёровна" data-lang class="text-bold text-22"></p>
+                <p data-type-uz="Neyropsixolog" data-type-ru="Hейропсихолог" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person1.jpg" width="250" alt="" />
-                <p class="text-bold text-22">Axmetov Jamol</p>
-                <p>Лоp</p>
+                <p class="text-bold text-22" data-type-uz="Axmetov Jamol" data-type-ru="Axmetov Jamol" data-lang></p>
+                <p data-type-uz="Lor" data-type-ru="Лоp" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person2.jpg" height="100%" width="250" alt="" />
-                <p class="text-bold text-22">Axmetov Jamol</p>
-                <p>Неврапотолoг</p>
+                <p class="text-bold text-22" data-type-uz="Axmetov Jamol" data-type-ru="Ахметов Джамал" data-lang></p>
+                <p data-type-uz="Nevropotolog" data-type-ru="Неврапотолoг" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person3.jpg" height="100%" width="250" alt="" />
-                <p class="text-bold text-22">Xojaniyazov G'ayrat </p>
-                <p>Педиатр реаниматолoг</p>
+                <p class="text-bold text-22" data-type-uz="Xojaniyazov G'ayrat" data-type-ru="Ходжаниязов Гайрат" data-lang> </p>
+                <p data-type-uz="Pediatr reanimotolog" data-type-ru="Педиатр реаниматолoг" data-lang></p>
               </div>
               <div class="slide">
                 <img src="./assets/images/person4.jpg" height="100%" width="250" alt="" />
-                <p class="text-bold text-22">Мафтуна Бахтёровна</p>
-                <p>Neyropsixolog</p>
+                <p data-type-uz="Maftuna Baxtiyorovna" data-type-ru="Мафтуна Бахтёровна" data-lang class="text-bold text-22"></p>
+                <p data-type-uz="Neyropsixolog" data-type-ru="Hейропсихолог" data-lang></p>
               </div>
-
-
             </div>
           </div>
       </section>
 
 
-
-
-
-      <!-- 
-        - #LISTING
-      -->
 
       <section class="section listing" aria-labelledby="listing-label">
         <div class="container">
@@ -447,9 +382,9 @@
           <ul class="grid-list">
 
             <li>
-              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctolarimiz</p>
+              <p data-type-uz="Doctolarimiz" data-type-ru="Наши врачи" data-lang class="section-subtitle title-lg" id="listing-label" data-reveal="left"></p>
 
-              <h2 class="headline-md" data-reveal="left">Doktorlarni qidiring</h2>
+              <h2 data-type-uz="Doktorlarni qidiring" data-type-ru="Ищите врачей" data-lang class="headline-md" data-reveal="left"></h2>
             </li>
             <li>
               <div class="listing-card" data-reveal="bottom">
@@ -461,7 +396,7 @@
                 <div>
                   <h3 class="headline-sm card-title">Lor</h3>
 
-                  <p class="card-text">Quloq-burun-tomoq doktori</p>
+                  <p data-type-uz="Quloq-burun-tomoq doktori" data-type-ru="Врач ухо, горло, нос" data-lang class="card-text"></p>
                 </div>
 
               </div>
@@ -475,9 +410,9 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Nevropotolog</h3>
+                  <h3 data-type-uz="Nevropotolog" data-type-ru="Невропатолог" data-lang class="headline-sm card-title"></h3>
 
-                  <p class="card-text"> Asab tizimi mutaxassisi</p>
+                  <p data-type-uz="Asab tizimi mutaxassisi" data-type-ru="Специалист по нервной системе" data-lang class="card-text"> </p>
                 </div>
 
               </div>
@@ -491,9 +426,9 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Pediatr </h3>
+                  <h3 data-type-uz="Pediatr" data-type-ru="Педиатр" data-lang class="headline-sm card-title"> </h3>
 
-                  <p class="card-text">Bolalar shifokori</p>
+                  <p data-type-uz="Bolalar shifokori" data-type-ru="Педиатр" data-lang class="card-text"></p>
                 </div>
 
               </div>
@@ -507,9 +442,9 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Neyropsixolog</h3>
+                  <h3 data-type-uz="Neyropsixolog" data-type-ru="Hейропсихолог" data-lang class="headline-sm card-title"></h3>
 
-                  <p class="card-text">Miya va ruhiy jarayonlar</p>
+                  <p data-type-uz="Miya va ruhiy jarayonlar" data-type-ru="Мозг и психические процессы" data-lang class="card-text"></p>
                 </div>
 
               </div>
@@ -523,9 +458,9 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Endokrinolog</h3>
+                  <h3 data-type-uz="Endokrinolog" data-type-ru="Эндокринолог" data-lang class="headline-sm card-title"></h3>
 
-                  <p class="card-text"> Gormonlar almashinuvi</p>
+                  <p data-type-uz="Gormonlar almashinuvi" data-type-ru="Гормональный обмен" data-lang class="card-text"> </p>
                 </div>
 
               </div>
@@ -538,9 +473,9 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title"> Psixolog </h3>
+                  <h3 data-type-uz="Psixolog" data-type-ru="Психолог" data-lang class="headline-sm card-title">  </h3>
 
-                  <p class="card-text">Ruhiy holat tahlili</p>
+                  <p data-type-uz="Ruhiy holat tahlili" data-type-ru="Анализ психического состояния" data-lang class="card-text"></p>
                 </div>
 
               </div>
@@ -555,19 +490,15 @@
 
 
 
-      <!-- 
-        - #BLOG
-      -->
 
       <section class="section blog" aria-labelledby="blog-label">
         <div class="container">
 
-          <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
-            Shifoxonamiz haqida
+          <p data-type-uz="Shifoxonamiz haqida" data-type-ru="О нашей больнице" data-lang class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
+            
           </p>
 
-          <h2 class="section-title headline-md text-center" data-reveal="bottom">Mutaxasislardan sifatli muolaja oling
-          </h2>
+          <h2 data-type-uz="Mutaxasislardan sifatli muolaja oling" data-type-ru="Получите качественное лечение от экспертов" data-lang class="section-title headline-md text-center" data-reveal="bottom"></h2>
 
         </div>
         <div >
@@ -582,12 +513,6 @@
   </main>
 
 
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
 
   <footer class="footer" id="footer">
     <div class="container">
@@ -609,12 +534,13 @@
               </div>
 
               <div>
-                <p>
-                  Ofis Telefoni : <a href="tel:+998958188442" class="contact-link">+99895 818 84 42</a>
+                <p class="d-flex">
+                  <span data-lang data-type-uz="Ofis Telefoni" data-type-ru="Офисный телефон"> </span>
+                   : <a href="tel:+998958188442" class="contact-link">+99895 818 84 42</a>
                 </p>
 
-                <p>
-                  Uyali aloqa : <a href="tel:+998908206787" class="contact-link">+99890 820 67 87</a>
+                <p class="d-flex"> <span data-lang data-type-uz="Uyali aloqa" data-type-ru="Сотовая связь"></span>
+                 : <a href="tel:+998908206787" class="contact-link">+99890 820 67 87</a>
                 </p>
               </div>
 
@@ -626,11 +552,11 @@
               </div>
 
               <div>
-                <p>
-                  Kassa Telefoni : <a href="tel:+998958188442" class="contact-link">+99895 818 84 43</a>
+                <p class="d-flex"> <span data-lang data-type-uz="G'azna raqami" data-type-ru="Касса номера"></span>
+                   : <a href="tel:+998958188442" class="contact-link">+99895 818 84 43</a>
                 </p>
-                <p>
-                  Telegram raqami : <a href="tel:+998958188442" class="contact-link">+99895 818 84 42</a>
+                <p class="d-flex"> <span data-lang data-type-uz="Telegram raqami " data-type-ru="Номер телеграма"></span>
+                  : <a href="tel:+998958188442" class="contact-link">+99895 818 84 42</a>
                 </p>
           
               </div>
@@ -642,17 +568,17 @@
 
         <div class="footer-list" data-reveal="bottom">
 
-          <p class="headline-sm footer-list-title">Biz haqimizda</p>
+          <p data-type-uz="Biz haqimizda" data-type-ru="О нас" data-lang class="headline-sm footer-list-title"></p>
 
-          <p class="text">
-            Yuragingizdagi eng nozik muhabbatga – professional g‘amxo‘rlik.
+          <p data-type-uz="Yuragingizdagi eng nozik muhabbatga – professional g‘amxo‘rlik." data-type-ru="Профессиональная забота о самой нежной любви в вашем сердце." data-lang class="text">
+            
           </p>
 
           <address class="address">
             <ion-icon name="map-outline"></ion-icon>
 <a href="https://yandex.uz/navi/org/32834467387/?ll=69.347719%2C41.293760&z=12">
-  <span class="text">
-    Бектемир тумани Обод кучаси 123 Уй, мулжал Иык Ота</span>
+  <span class="text" data-type-uz="Bektemir tumani, Obod ko‘chasi, 123-uy, Iyk ota" data-type-ru="Бектемирский район, улица Обада, 123, Ийк Ота" data-lang>
+    </span>
   </address>
 </a>
 
@@ -661,27 +587,27 @@
         <ul class="footer-list" data-reveal="bottom">
 
           <li>
-            <p class="headline-sm footer-list-title">Xizmatlar</p>
+            <p data-type-uz="Xizmatlar" data-type-ru="Услуги" data-lang class="headline-sm footer-list-title"></p>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Doktorlar</a>
+            <a data-type-uz="Doktorlar" data-type-ru="Врачи" data-lang href="#" class="text footer-link"></a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Bu qanday ishylaydi</a>
+            <a data-type-uz="Bu qanday ishylaydi" data-type-ru="Как это работает?" data-lang href="#" class="text footer-link"></a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Nimani taklif beramiz</a>
+            <a data-type-uz="Nimani taklif beramiz" data-type-ru="Что мы предлагаем?" data-lang href="#" class="text footer-link"></a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">So'ngi yangilikar</a>
+            <a data-type-uz="So'ngi yangilikar" data-type-ru="Последние новости" data-lang href="#" class="text footer-link"></a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Biz bilan bog'laning</a>
+            <a data-type-uz="Biz bilan bog'laning" data-type-ru="Связаться с нами" data-lang href="#" class="text footer-link"></a>
           </li>
 
         </ul>
@@ -689,22 +615,22 @@
         <ul class="footer-list" data-reveal="bottom">
 
           <li>
-            <p class="headline-sm footer-list-title">Foydali havolalar</p>
+            <p data-type-uz="Foydali havolalar" data-type-ru="Полезные ссылки" data-lang class="headline-sm footer-list-title"></p>
           </li>
           <li>
-            <a href="#" class="text footer-link">Foydalanish qoidalari</a>
-          </li>
-
-          <li>
-            <a href="#" class="text footer-link">Bizning xizmatlar</a>
+            <a data-type-uz="Foydalanish qoidalari" data-type-ru="Условия эксплуатации" data-lang href="#" class="text footer-link"></a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Safimizga qo'shiling </a>
+            <a data-type-uz="Bizning xizmatlar" data-type-ru="Наши услуги" data-lang href="#" class="text footer-link"></a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Jamoa ro'yhati</a>
+            <a data-type-uz="Safimizga qo'shiling" data-type-ru="Вступайте в наши ряды" data-lang href="#" class="text footer-link"> </a>
+          </li>
+
+          <li>
+            <a data-type-uz="Jamoa ro'yhati" data-type-ru="Состав команды" data-lang href="#" class="text footer-link"></a>
           </li>
 
         </ul>
@@ -712,18 +638,18 @@
         <div class="footer-list" data-reveal="bottom">
 
 
-          <form class="footer-form">
-            <input type="text" id="fio" placeholder="FIO" class="input-field title-lg">
-            <input type="date" id="date" placeholder="muddat" class="input-field title-lg" style="margin-top: 12px;">
-            <input type="tel" id="phone" placeholder="Uyali aloqa" class="input-field title-lg"
+          <form class="footer-form"  id="tgForm">
+            <input type="text" required id="fio" placeholder="FIO" class="input-field title-lg">
+            <input type="date" required id="date" placeholder="muddat" class="input-field title-lg" style="margin-top: 12px;">
+            <input type="tel" required id="phone" placeholder="Uyali aloqa" class="input-field title-lg"
               style="margin-top: 12px;">
-            <button id="tgForm" type="button" class="btn has-before title-md">Uchrashuv belgilashs</button>
+            <button data-type-uz="Uchrashuv belgilash" data-type-ru="Назначить встречу" data-lang type="submit" class="btn has-before title-md">Uchrashuv belgilash</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="text copyright">
-          &copy; Endikrinolog_uz 2023. Barcha huquqlar himoyalangan.
+        <p class="text copyright" >
+          &copy; Endikrinolog_uz 2023.<span data-type-uz="Barcha huquqlar himoyalangan." data-type-ru="Все права защищены." data-lang></span> </span>
         </p>
         <ul class="social-list">
           <li>
@@ -750,12 +676,6 @@
 
 
 
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up"></ion-icon>
   </a>
@@ -764,14 +684,7 @@
 
 
 
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

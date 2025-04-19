@@ -1088,6 +1088,7 @@
     .navbar { margin-inline-start: auto; }
   
     .navbar-list {
+      align-items: center;
       display: flex;
       gap: 8px;
     }
@@ -1206,3 +1207,19 @@
   .mx-auto{
     margin-inline: auto;
   }
+  .d-flex{
+    display: flex;
+  }
+  .linec{
+    width: 1px;
+    height: 25px;
+    border: 1px solid #fff;
+    margin-inline: 10px;
+  }
+  .text-white{
+    color: #fff;
+  }
+  .align-items-center{
+    align-items: center;
+  }
+  .cp{cursor: pointer;}

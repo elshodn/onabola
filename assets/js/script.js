@@ -85,3 +85,10 @@ document.getElementById('tgForm').addEventListener('click', function() {
   console.error('Error:', error);
 });
 });
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll('[data-lang]');
+  elements.forEach(el => {
+    el.textContent = el.getAttribute(`data-type-${lang}`);
+  });
+}
+changeLanguage('uz');
