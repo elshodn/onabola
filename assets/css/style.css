@@ -267,7 +267,7 @@ body.nav-active {
 
 .grid-list {
     display: grid;
-    gap: 40px 28px
+    gap: 40px 28px;
 }
 
 .service-card,
@@ -925,7 +925,7 @@ body.nav-active {
     }
 
     .footer-brand,
-    .listing .grid-list>li:first-child {
+    .listing .unique>li:first-child {
         grid-column: 1/3
     }
 
@@ -942,8 +942,16 @@ body.nav-active {
         align-items: center
     }
 }
-
+@media (max-width:992px){
+    .pricing{
+        justify-content: center !important
+    }
+    .pricing-card{
+        width: 90% !important;
+    }
+}
 @media (min-width:992px) {
+ 
     .container {
         max-width: 940px
     }
@@ -1139,7 +1147,7 @@ body.nav-active {
 }
 .grid-list2{
     display: grid;
-    grid-template-columns: repeat(4,1fr) !important;
+    grid-template-columns:1fr 1fr !important;
     gap:20px;
 
 }
@@ -1583,6 +1591,8 @@ body{background-color:#eee;}
 .pricing{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .pricing-card{
     width: 45%;
